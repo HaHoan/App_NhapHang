@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CategoryViewFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/text_padding"
+            android:text="@string/add_category_title"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/title"></TextView>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save"
+            android:layout_marginRight="@dimen/text_padding"
+            android:src="@drawable/icon_save"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            ></ImageButton>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ed_category_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/category_name"
+        android:maxLength="40"
+        android:padding="@dimen/text_padding"></EditText>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CategoryDetailFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/text_padding"
+            android:src="@drawable/icon_back"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btn_back"
+            ></ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/category_detail"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:padding="@dimen/text_padding"
+            android:textStyle="bold"
+            android:id="@+id/tv_category"
+            android:layout_toRightOf="@id/btn_back"
+            ></TextView>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/text_padding"
+            android:src="@drawable/icon_edit"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/text_padding"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btn_edit"
+            ></ImageButton>
+
+    </RelativeLayout>
+
+    <SearchView
+        android:id="@+id/search_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:iconifiedByDefault="false"
+        android:queryHint="Tên hàng..." />
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lv_items">
+</ListView>
+</LinearLayout>
